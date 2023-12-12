@@ -1,0 +1,694 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+video {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+
+#tampilan {
+    background-image:radial-gradient(transparent 5px, #3e5c76 7px, #3e5c76 5px, transparent 12px, transparent 17px, #f0ebd8 7px, transparent 12px);
+    background-size:10px 10px ;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+header:after {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+
+.wrap {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.atas {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0%;
+    padding-top: 30px;
+}
+
+#logoUNS {
+    width: 200%;
+    height: 200%;
+    padding-left: 0%;
+    margin-left: 0px;
+    padding-left: 0px;
+
+}
+
+
+.img-mail {
+    height: 4%;
+    width: 4%;
+    padding-right: 7px;
+}
+
+#mail {
+    color: aliceblue;
+}
+
+
+.img-contact {
+    height: 2%;
+    width: 2%;
+    padding-left: 20px;
+    padding-right: 7px;
+}
+
+#Contact {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: aliceblue;
+}
+
+
+#Navbar {
+    position: sticky;
+    top: 0;
+}
+
+
+#Navbar ul{
+    background-color: rgb(0, 136, 255);
+    padding: 0 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,.25);
+    list-style: none;
+    width: 1000px;
+    height: 70px;
+}
+
+
+#Navbar ul li{
+    float: left;
+}
+
+#Navbar ul li:hover{
+    background: rgba(18, 18, 82, 0.263);
+}
+
+#Navbar ul li a{
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    padding-top: 23px;
+    text-decoration: none;
+    height: 37px;
+}
+
+#Navbar ul li:hover a{
+    color: white;
+    height: 43px;
+    padding-top: 18px;
+}
+
+#Navbar ul li:hover > ul {
+    display: block;
+}
+
+
+#Navbar ul ul{
+    background: rgb(0, 136, 255);
+    position: absolute;
+    padding: 0;
+    top: 100%;
+    display: none;
+    width: auto;
+    height: auto;
+}
+
+#Navbar ul ul li{
+
+    float: none;
+    position: relative;
+    color: azure;
+}
+
+#Navbar ul ul ul li{
+    float: none;
+    position: relative;
+}
+
+
+#searchButton{
+    height: 2%;
+    width: 2%;
+    padding-left: 13%;
+    padding-top: 23px;
+}
+
+
+.isi {
+    background-color: aliceblue;
+}
+
+
+.tengah{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#logo-tengah {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 239, 239);
+    font-style:initial;
+    display: inline-block;
+    font-size: 40px;
+    border: 1px solid aliceblue;
+    padding: 30px ;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    border-radius: 400px;
+    margin-top: 20px;
+
+}
+
+.uns{
+    padding-left: 270px;
+    padding-right: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: auto;
+}
+
+.accreditation {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    display: inline-block;
+    font-size: 20px;
+    border: 2px solid rgba(0, 165, 254, 0.764);
+    padding: 30px ;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 350px;
+    
+}
+
+.accreditation img {
+    width: 70px;
+    height: 70px;
+    padding-left: 110px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+#acr {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: rgb(36, 134, 255);
+    font-style:initial;
+    display: inline-block;
+    font-size: 20px;
+    border: 1px solid rgb(0, 136, 255);
+    padding: 30px ;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    border-radius: 400px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.facility{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    border: 2px solid rgba(0, 165, 254, 0.764);
+    padding: 30px ;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 350px;
+}
+
+.facility img {
+    width: 100px;
+    height: 100px;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+#fac{
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: rgb(36, 134, 255);
+    font-style:initial;
+    display: inline-block;
+    font-size: 20px;
+    border: 1px solid rgb(0, 136, 255);
+    padding: 30px ;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    border-radius: 400px;
+    margin-top: 25px;
+    margin-left: 70px;
+}
+
+.entry {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border: 2px solid rgba(0, 165, 254, 0.764);
+    display: inline-block;
+    padding: 30px ;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    margin-top: 20px; 
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 350px;
+
+}
+
+.entry img {
+    padding-left: 100px;
+    padding-right: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+#ent-pt{
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: rgb(36, 134, 255);
+    font-style:initial;
+    display: inline-block;
+    font-size: 20px;
+    border: 1px solid rgb(0, 136, 255);
+    padding: 30px ;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    border-radius: 400px;
+    margin-top: 60px;
+    margin-left: 70px;
+}
+
+#backg {
+    background-image: url(Logo/teknologi-wallpaper-4.png);
+    height: 50vh;
+}
+
+#unproof {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 239, 239);
+    font-style:initial;
+    display: inline-block;
+    font-size: 40px;
+    border: 1px solid aliceblue;
+    padding: 30px ;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    border-radius: 400px;
+    margin-top: 20px;
+    margin-left: 400px;
+    z-index: -1;
+    
+}
+
+
+.log-tengah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#penj {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(136, 136, 136);
+}
+
+#jud-penj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#kep-dosen {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pembukaan {
+    padding-left: 250px;
+    padding-right: 200px;
+    width: 1000px;
+}
+
+.pembukaan h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+embed {
+    box-shadow:#3e5c76 5px;
+    width: 1000px;
+    height: 600px;
+    padding-top: 30px;
+}
+
+.jurnal {
+    background-color: rgb(0, 95, 127);
+    height: 360px;
+}
+
+.jurnal h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: aliceblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.buku-jurnal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.3); 
+    margin-left: 250px;
+    margin-bottom: 110px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 1000px;
+}
+
+#jurnal-ijie {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#jurnal-ijie img {
+    width: 80%;
+    padding-left: 15px;
+}
+
+#jurnal-ijie p {
+    font-size: small;
+    color: rgb(199, 199, 199);
+}
+
+#jurnal-ijie h3{
+    font-family: 'Lato', sans-serif;
+    color: aliceblue;
+}
+
+#jurnal-joive {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#jurnal-joive img {
+    width: 80%;
+    padding-left: 15px;
+    padding-right: 8px;
+}
+
+#jurnal-joive p {
+    font-size: small;
+    color: rgb(199, 199, 199);
+}
+
+#jurnal-joive h3 {
+    font-family: 'Lato', sans-serif;
+    color: aliceblue;
+}
+
+.school-partner {
+    background-color: rgba(0, 0, 0, 0.115); 
+}
+
+.school-partner h2{
+    display: flex;
+    justify-content: right;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-right: 200px;
+}
+
+#school {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#school img {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer{
+    background-color: rgb(22, 36, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-bottom: 0;
+}
+
+.footer-logo {
+    width: 400px;
+    justify-content: left;
+    align-items: center;
+    padding: 0;
+    margin-right: 100px;
+}
+
+.footer-logo img{
+    padding-right: 30px;
+}
+
+.footer-logo a{
+    color:aliceblue;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+}
+
+#bawah{
+    padding-bottom: 0;
+}
+
+#academic {
+    color: aliceblue;
+    width: 200px;
+    height: 265px;
+}
+
+#academic h3{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 0;
+    margin-top: 0%;
+}
+
+#academic li{
+    text-decoration: none;
+}
+
+#academic p{
+    color: aliceblue;
+}
+#education{
+    color: aliceblue;
+    width: 300px;
+    height: 265px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+#education h3{
+    padding-top: 0;
+    margin-top: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#education p{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#plg-bawah {
+    background-color: rgb(248, 250, 255);
+    padding-top: 0;
+    margin-top: 0;
+    height: 40px;
+}
+
+#plg-bawah h2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#los{
+    padding-right: 300px;
+}
+
+#LecturerBuilding {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 239, 239);
+    font-style:initial;
+    display: inline-block;
+    font-size: 40px;
+    border: 1px solid aliceblue;
+    padding: 30px ;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    border-radius: 400px;
+    margin-top: 20px;
+    margin-left: 300px;
+    z-index: -1;
+    
+}
+
+#pict-lectu {
+    width: 70%;
+    height: 500px;
+    margin-top: 50px;
+    padding-left: 130px;
+}
+
+#academic p :hover{
+    color: blue;
+}
+
+.certificate embed{
+    width: 1000px;
+    height: 750px;
+}
+
+
+
+.isi-certificate{
+    padding-left: 270px;
+    padding-bottom: 70px;
+}
+
+.certificate h2{
+    padding-top: 50px;
+    padding-left: 370px;
+}
+
+.sk embed {
+    width: 1000px;
+    height: 750px;
+}
+
+.sk h2{
+    padding-left: 370px;
+    padding-top: 70px;
+}
+
+.isi-fac{
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.isi-entry{
+    padding-left: 250px;
+    padding-right: 250px;
+    width: 1000px;
+}
+
+#s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    padding-top: 50px;
+}
+
+#sbm{
+    background-color: #314d6572;
+    padding: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#snm {
+    background-color: #314d6572;
+    padding: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#sm {
+    background-color: #314d6572;
+    padding: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#entry-img {
+    padding-top: 30px;
+    padding-left: 70px;
+}
+
+.mm{
+    background-color: #3e5c763c;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
